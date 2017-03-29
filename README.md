@@ -18,6 +18,23 @@ View the result at [thepracticaldev.github.io/1pr](https://thepracticaldev.githu
 - Create a pull request
 - Hope you get picked
 
+#### Gulp
+The project contains a simple Gulp build script to minify all code. This is important to do because the more different files need to be loaded, the longer the page load will be.
+Another reason for concatenating all Javascript is that there will be no issues with.
+
+To use Gulp, you need to have [Node.js](https://nodejs.org) installed. Once it's installed, install the Gulp CLI globally with `npm install -g gulp-cli`. Then run `npm install` to install the dependencies.
+
+_Note: because this gulpfile.js uses Gulp 4, the global `gulp` package will not work with it so you will need to uninstall it and reinstall `gulp-cli`.
+Fortunately `gulp-cli` is backwards compatible with older gulpfiles._
+
+Once all dependencies are installed, simply run `gulp` to start. This will do the following:
+
+- Concatenate all Javascript in `scripts/` and `vendor/` and create a single minified output file in `build/app.min.js`
+- Concatenate all CSS in `stylesheets/` and `vendor/` and create a single minified output file in `build/styles.min.css`
+- Watch `scripts/`, `stylesheets/` and `vendor/` for changes and automatically re-build when you make changes
+- Start a server on http://localhost:8080 which serves the site for easy local development (no need to start up a separate server)
+
+If you only want those first two steps, you can run `gulp build` which will just build all the files and exit.
 
 ## Coding standards
 When contributing, please try to follow the coding standards so we have nice looking code that's easy to follow for everyone.
