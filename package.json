@@ -1,0 +1,27 @@
+{
+  "name": "1pr",
+  "version": "1.0.0",
+  "description": "I will be accepting up to one pull request per day on this project.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepracticaldev/1pr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/thepracticaldev/1pr/issues"
+  },
+  "homepage": "https://thepracticaldev.github.io/1pr",
+  "devDependencies": {
+    "babili": "0.0.12",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-merge": "^0.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-serve": "^1.4.0",
+    "gulp-uglify": "^2.1.2"
+  }
+}
