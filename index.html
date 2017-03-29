@@ -5,8 +5,8 @@
 
 		<title>One PR A Day</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
-		<link rel="stylesheet" type="text/css" href="stylesheets/gitter.css">
+
+		<!-- Scripts and stylesheets are loaded at the bottom of the file -->
 
 	</head>
 
@@ -35,9 +35,9 @@
 				<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
 			</a>
 		</nav>
-		
+
 		<div id="main-content">
-		    
+
 			<div id="sidebar">
 				<ul>
 				  <li>
@@ -54,7 +54,7 @@
 				  </li>
 				</ul>
 			</div>
-			
+
 		    <div id="content">
 				<div id="banner">
 
@@ -84,12 +84,12 @@
 				<div id="contributors-container">
 
 					<h4>A project by</h4>
-	
+
 					<!-- This will become the list of contributors -->
 					<div id="contributors"></div>
 
 				</div>
-			    
+
 		    </div>
 		</div>
 
@@ -103,24 +103,16 @@
 			<a class="github-button" href="https://github.com/thepracticaldev/1pr/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/thepracticaldev/1pr/network" data-count-api="/repos/thepracticaldev/1pr#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork thepracticaldev/1pr on GitHub">Fork</a>
 
 		</footer>
-		
-		<!-- Gitter script -->
-		<script src="scripts/sidecar.v1.js" async defer></script>
-		
-		<!-- Custom Scripts -->
-		<script src="scripts/main.js"></script>
 
-		<!-- Load the shared API script -->
-		<script src="scripts/api.js"></script>
+		<!-- Load scripts -->
+		<script async src="build/app.min.js"></script>
 
-		<!-- Asynchronously load the other scripts -->
-		<script src="scripts/contributors.js" async></script>
-		<script src="scripts/pr.js" async></script>
+		<!-- Load stylesheet -->
+		<link async rel="stylesheet" type="text/css" href="build/styles.min.css">
 
-		<!-- GH buttons script -->
+		<!-- Load external scripts -->
 		<script async defer src="https://buttons.github.io/buttons.js"></script>
 
-		
 	</body>
 
 </html>
